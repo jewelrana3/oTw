@@ -48,3 +48,15 @@ export const plans = [
     highlight: false,
   },
 ];
+
+export const tools = [
+  { image: "/our-tools/two.png" },
+  { image: "/our-tools/one.png" },
+  { image: "/our-tools/three.png" },
+  { image: "/our-tools/five.png" },
+  { image: "/our-tools/four.png" },
+  { image: "/our-tools/one.png" },
+  { image: "/our-tools/five.png" },
+  { image: "/our-tools/four.png" },
+  { image: "/our-tools/one.png" },
+];
