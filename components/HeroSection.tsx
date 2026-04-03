@@ -1,6 +1,10 @@
 "use client";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import three from "@/public/hero-section/three.png";
+import two from "@/public/hero-section/two.png";
+import one from "@/public/hero-section/one.png";
 
 export default function HeroSection() {
   const scrollToPricing = () => {
@@ -20,29 +24,23 @@ export default function HeroSection() {
           backgroundSize: "100px 100px",
         }}
       />
-
       {/* 2. Floating Logos & Dots Container */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Logos (Tilted) */}
-        <div className="absolute top-[15%] left-[15%] rotate-[-15deg] bg-[#ff5a5f] p-4 rounded-3xl shadow-lg animate-float">
-          <div className="w-12 h-12 text-white font-bold flex items-center justify-center">
-            airbnb
-          </div>
+        <div className="absolute top-[15%] left-[15%] ">
+          <Image src={three} alt="Three" />
         </div>
         <div className="absolute top-[15%] right-[15%] rotate-20 bg-[#003580] p-4 rounded-3xl shadow-lg">
           <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">
             B.
           </div>
         </div>
-        <div className="absolute bottom-[25%] left-[20%] rotate-[-10deg] bg-[#001d3d] p-4 rounded-3xl shadow-lg border-2 border-purple-400">
-          <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">
-            V
-          </div>
+        <div className="absolute bottom-[20%]  sm:bottom-[25%] left-[20%] rotate-[-10deg] ">
+          <Image src={two} alt="Two" />
         </div>
-        <div className="absolute bottom-[25%] right-[20%] rotate-25 bg-[#34e0a1] p-4 rounded-3xl shadow-lg">
-          <div className="w-12 h-12 text-black font-bold flex items-center justify-center text-3xl">
-            🦉
-          </div>
+
+        <div className="absolute bottom-[20%]  sm:bottom-[25%] right-[20%] rotate-25 bg-[#34e0a1] p-4 rounded-3xl shadow-lg">
+          <Image src={one} alt="One" />
         </div>
 
         {/* Scattered Dots */}
@@ -53,32 +51,31 @@ export default function HeroSection() {
         <div className="absolute bottom-[20%] left-[5%] w-2 h-2 bg-yellow-600 rounded-full" />
         <div className="absolute bottom-[10%] left-[50%] w-4 h-4 bg-cyan-400 rounded-full" />
         <div className="absolute bottom-[30%] right-[5%] w-2 h-2 bg-blue-900 rounded-full" />
-      </div>
-
+      </div>{" "}
+      {/* This correctly closes the Dots Container */}
       {/* 3. Main Content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 tracking-tight">
-          Airbnb Assistants For <br />
-          <span className="text-gray-900">Property Management</span>
+      <div className="relative z-10 text-center max-w-4xl mx-auto mt-28 lg:mt-0">
+        <h1 className="text-gray-900 mb-8 tracking-tight">
+          <span className="md:text-5xl font-bold"> Airbnb Assistants For</span>
+          <br />
+          <span className="text-gray-900 md:text-4xl">Property Management</span>
         </h1>
 
-        <p className="text-gray-500 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
+        <p className="text-lg leading-relaxed mb-10 max-w-3xl mx-auto font-semibold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
 
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-6 mt-10!">
           <Link
             href="https://meet.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#ED3C6A] text-white px-6 py-2.5 rounded text-sm font-semibold hover:bg-[#c5221f] hover:shadow-lg transition-all no-underline flex items-center  gap-2"
+            className="bg-[#ED3C6A] text-white px-6 py-2.5 rounded text-sm font-semibold hover:bg-[#c5221f] hover:shadow-lg transition-all no-underline flex items-center gap-2"
           >
             Schedule A Meeting{" "}
             <span>
-              <ArrowRight />
+              <ArrowRight size={18} />
             </span>
           </Link>
 
@@ -90,7 +87,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
       {/* 4. Footer Text */}
       <div className="absolute bottom-10 w-full text-center">
         <p className="text-gray-900 font-bold text-xl">

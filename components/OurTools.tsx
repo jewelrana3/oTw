@@ -19,7 +19,7 @@ export default function OurTools() {
       </div>
 
       {/* card */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 bg-[#F6F6F6] p-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 px-4 bg-[#F6F6F6] p-6">
         {tools?.map((service, i) => (
           <div
             key={i}

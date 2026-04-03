@@ -10,11 +10,10 @@ const allImages = [four, one, two, four, five, six];
 
 export default function TrustedBy() {
   return (
-    
-    <div className="bg-[#F6F6F6] py-6">
-      <Marquee 
-        gradient={false} 
-        speed={50} 
+    <div className="bg-[#F6F6F6] py-6 w-full max-w-7xl mx-auto overflow-hidden">
+      <Marquee
+        gradient={false}
+        speed={50}
         pauseOnHover={true}
         /* The gap is handled internally so there's no "jump" at the end */
       >

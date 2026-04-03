@@ -54,41 +54,47 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-16 px-4  bg-white">
+   <section className="py-12 md:py-20 px-4 max-w-7xl mx-auto bg-white">
       {/* Header Section */}
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+      <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
           Our <span className="text-[#ff4d8d]">Service</span>
         </h2>
-        <p className="text-black font-semibold ">
+        <p className="text-gray-700 font-medium text-sm md:text-base leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea commodo <br /> consequat.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi.
         </p>
       </div>
 
       {/* Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Changed: grid-cols-1 -> md:grid-cols-2 -> lg:grid-cols-3 */}
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-6 md:gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-col items-start p-10 bg-white rounded-[2rem] shadow-sm hover:shadow-md transition-shadow duration-300 ${service.border ? "border border-[#ff4d8d]" : ""}`}
+            className={`flex flex-col items-start p-8 md:p-10 bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm hover:shadow-lg transition-all duration-300 ${
+              service.border ? "border border-[#ff4d8d]" : "border border-transparent"
+            }`}
           >
-            {/* Icon Placeholder - Using div for illustration */}
-            <div className="w-20 h-20 mb-8 relative">
-              <Image src={service.icon} alt={service.title} />
+            {/* Icon Wrapper */}
+            <div className="w-16 h-16 md:w-20 md:h-20 mb-6 md:mb-8 flex items-center justify-center">
+              <Image 
+                src={service.icon} 
+                alt={service.title} 
+                className="object-contain"
+              />
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 leading-tight">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 leading-tight">
               {service.title}
             </h3>
 
-            <p className="text-black font-semibold mb-8 leading-relaxed">
+            <p className="text-gray-600 font-medium text-sm md:text-base mb-6 md:mb-8 leading-relaxed">
               {service.description}
             </p>
 
-            <button className="mt-auto px-8 py-2 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-medium hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
+            <button className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
               Read More
             </button>
           </div>

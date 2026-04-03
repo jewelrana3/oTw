@@ -1,10 +1,7 @@
 "use client";
 
 import { Accordion as AccordionPrimitive } from "@base-ui/react/accordion";
-
 import { cn } from "@/lib/utils";
-import { HugeiconsIcon } from "@hugeicons/react";
-import { ArrowDown01Icon, ArrowUp01Icon } from "@hugeicons/core-free-icons";
 import { Minus, Plus } from "lucide-react";
 
 function Accordion({ className, ...props }: AccordionPrimitive.Root.Props) {
@@ -12,7 +9,7 @@ function Accordion({ className, ...props }: AccordionPrimitive.Root.Props) {
     <AccordionPrimitive.Root
       data-slot="accordion"
       className={cn(
-        "flex w-full flex-col overflow-hidden rounded-md border",
+        "flex w-full flex-col overflow-hidden rounded-md ",
         className,
       )}
       {...props}
@@ -40,28 +37,31 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "group/accordion-trigger relative flex flex-1 items-start justify-between gap-6 border border-transparent p-2 text-left text-xs/relaxed font-medium transition-all outline-none hover:underline aria-disabled:pointer-events-none aria-disabled:opacity-50 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground",
+          "group/accordion-trigger relative flex flex-1 items-center justify-between gap-6 p-4 text-left font-medium transition-all outline-none hover:no-underline aria-disabled:pointer-events-none aria-disabled:opacity-50",
           className,
         )}
         {...props}
       >
         {children}
-        <Minus
-          strokeWidth={2}
-          data-slot="accordion-trigger-icon"
-          className="pointer-events-none  shrink-0 group-aria-expanded/accordion-trigger:inline"
-        />
 
-        <Plus
-          strokeWidth={2}
-          data-slot="accordion-trigger-icon"
-          className="pointer-events-none shrink-0 "
-        />
+        {/* Icon Container */}
+        <div className="relative flex size-6 shrink-0 items-center justify-center text-[#f0306a]">
+          {/* MINUS: Hidden by default, shown only when expanded */}
+          <Minus
+            strokeWidth={2.5}
+            className="absolute size-7 hidden group-aria-expanded/accordion-trigger:block border border-[#f0306a] rounded-full p-1 cursor-pointer"
+          />
+
+          {/* PLUS: Shown by default, hidden when expanded */}
+          <Plus
+            strokeWidth={2.5}
+            className="absolute size-7 block group-aria-expanded/accordion-trigger:hidden border border-[#f0306a] rounded-full p-1"
+          />
+        </div>
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
 }
-
 function AccordionContent({
   className,
   children,

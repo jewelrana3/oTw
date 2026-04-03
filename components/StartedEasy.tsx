@@ -25,7 +25,7 @@ export default function StartedEasy() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
           Getting Started is <span className="text-[#ff4d8d]">Easy</span>
         </h2>
         <p className="text-black font-semibold ">
@@ -35,7 +35,7 @@ export default function StartedEasy() {
           ut aliquip ex ea commodo <br /> consequat.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 px-6">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center">
             {/* Card Container */}

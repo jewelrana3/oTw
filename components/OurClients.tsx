@@ -37,9 +37,9 @@ export default function TestimonialSection() {
         {/* Description */}
         <p className=" mx-auto mt-4 text-sm md:text-base text-black font-semibold leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et <br /> dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-          ut aliquip ex ea <br /> commodo consequat.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
       </div>
 

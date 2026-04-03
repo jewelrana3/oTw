@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 import man from "@/public/why-choose/man.png";
 import Image from "next/image";
@@ -17,7 +16,7 @@ export default function WhyChooseUs() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="z-10">
-            <h2 className="text-4xl  font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-2xl md:text-4xl  font-bold text-gray-900 mb-6 leading-tight">
               Few Reasons Why you <br /> Choose us?
             </h2>
             <p className="text-gray-600 mb-8 max-w-md">
