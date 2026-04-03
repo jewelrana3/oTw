@@ -11,7 +11,7 @@ export default function Pricing() {
 
   return (
     <section
-      className="py-20 px-4 bg-white font-sans"
+      className="mb-20 px-4 bg-white font-sans"
       ref={pricingRef}
       id="pricing"
     >
@@ -42,9 +42,9 @@ export default function Pricing() {
           >
             Pay Yearly
           </span>
-          <div className="absolute mt-40 md:mt-10 md:ml-110 flex flex-col items-center gap-2 mb-5">
+          <div className="absolute mt-50 md:mt-10 md:ml-110 flex flex-col md:flex-row items-center gap-2 mb-5 ">
             <Image src={offer} alt="Offer" />
-            <div className="text-[#ed426e] text-xs font-semibold md:mt-10">
+            <div className="text-[#ed426e] text-xs font-semibold mb-10  md:mt-20">
               Save 25%
             </div>
           </div>

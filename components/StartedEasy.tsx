@@ -38,11 +38,11 @@ export default function StartedEasy() {
           ut aliquip ex ea commodo <br /> consequat.
         </p>
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 px-12">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center">
             {/* Card Container */}
-            <div className="relative w-full aspect-4/3 sm:aspect-3/2 bg-white border border-pink-100 rounded-xl flex items-center justify-center mb-6">
+            <div className="relative w-full aspect-4/3 sm:aspect-3/2 bg-white border border-pink-100 rounded-xl flex items-center justify-center mb-6 h-44">
               {/* Number Badge */}
               <div className="absolute -top-5 -left-5 w-16 h-16 rounded-full border-4 border-[#ed426e] bg-white flex items-center justify-center">
                 <span className="text-lg font-bold text-gray-800">

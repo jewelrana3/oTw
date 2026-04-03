@@ -1,6 +1,11 @@
 import { Check } from "lucide-react";
 import man from "@/public/why-choose/man.png";
 import Image from "next/image";
+import room from "@/public/why-choose/room.png";
+import air from "@/public/why-choose/air.png";
+import v from "@/public/why-choose/v.png";
+import eye from "@/public/why-choose/eye.png";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
   const reasons = [
@@ -39,9 +44,14 @@ export default function WhyChooseUs() {
               ))}
             </ul>
 
-            <button className="bg-[#ed426e] hover:bg-[#d63a62] text-white font-semibold py-4 px-8 rounded-md flex items-center gap-2 transition-all">
+            <Link
+              href="https://meet.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#ed426e] hover:bg-[#d63a62] text-white font-semibold py-4 px-8 rounded-md flex items-center gap-2 transition-all w-64"
+            >
               Schedule A Meeting <span>→</span>
-            </button>
+            </Link>
           </div>
 
           {/* Right Visuals */}
@@ -58,19 +68,21 @@ export default function WhyChooseUs() {
 
             {/* Floating Card: Property Info (Top Left) */}
             <div className="absolute top-10 -left-20 z-20 bg-white p-3 rounded-2xl shadow-xl flex gap-4 w-64 animate-bounce-slow">
-              <div className="w-20 h-20 bg-gray-200 rounded-lg overflow-hidden shrink-0">
-                <img
-                  src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=200"
+              <div className="w-30 h-20 bg-gray-200  rounded-2xl">
+                <Image
+                  src={room}
                   alt="room"
-                  className="object-cover h-full"
+                  className="object-cover w-full h-full  rounded-2xl"
                 />
               </div>
               <div className="flex flex-col justify-center">
                 <div className="h-2 w-20 bg-gray-100 rounded mb-2" />
+                <div className="h-2 w-16 bg-gray-100 rounded mb-3" />
                 <div className="h-2 w-12 bg-gray-100 rounded mb-3" />
                 <div className="text-[10px] text-yellow-400">★★★★</div>
                 <div className="text-xs font-bold text-[#ed426e]">
-                  $75<span className="text-gray-400 font-normal">/night</span>
+                  $75
+                  <span className="text-black font-normal">/night</span>
                 </div>
               </div>
             </div>
@@ -78,7 +90,7 @@ export default function WhyChooseUs() {
             {/* Floating Card: Calendar (Bottom Left) */}
             <div className="absolute bottom-5 -left-10 z-20 bg-white p-4 rounded-2xl shadow-xl w-48">
               <div className="flex justify-between items-center mb-2 border-b pb-1">
-                <div className="w-8 h-2 bg-gray-100 rounded" />
+                <div className="w-20 h-2 bg-[#FDEBF0] rounded" />
                 <div className="flex gap-1 text-[10px] bg-indigo-900 text-white px-1 rounded">
                   {"< >"}
                 </div>
@@ -97,17 +109,18 @@ export default function WhyChooseUs() {
 
             {/* Floating Card: Logos (Top Right) */}
             <div className="absolute top-10 right-0 z-20 bg-white p-4 rounded-2xl shadow-xl grid grid-cols-2 gap-2">
-              <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center text-[8px] text-white font-bold">
-                airbnb
+              <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center p-1">
+                <Image src={air} alt="Three" />
               </div>
-              <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center text-[8px] text-white font-bold">
-                W
+              <div className="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center p-1">
+                <Image src={v} alt="v" />
               </div>
-              <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-[8px] text-white font-bold">
-                B.
+              <div className="w-12 h-12 bg-[#003580] rounded-lg flex items-center justify-center text-2xl text-white font-bold">
+                B{" "}
+                <span className="bg-[#00BAFC] w-2 h-2 mt-2 ml-1 rounded-full"></span>
               </div>
-              <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-[8px] text-white font-bold">
-                oo
+              <div className="w-12 h-12 bg-[#34E0A1] rounded-lg flex items-center justify-center ">
+                <Image src={eye} alt="eye" />
               </div>
             </div>
           </div>

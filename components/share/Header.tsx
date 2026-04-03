@@ -121,6 +121,8 @@ export default function Navbar() {
           <li className="pt-4 border-t">
             <Link
               href="https://meet.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#ED3C6A] text-white w-full py-3 rounded-lg font-semibold flex justify-center items-center gap-2"
             >
               Schedule A Meeting <ArrowRight size={18} />
