@@ -43,14 +43,12 @@ export default function TestimonialSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap- mb-32">
         {testimonials.map((item, i) => (
           <div
             key={i}
             className={`rounded-xl p-5 shadow-sm transition-all duration-300 text-black ${
-              item.highlight
-                ? "bg-white scale-105"
-                : "bg-[#F6F6F6] hover:scale-105"
+              item.highlight ? "bg-white" : "bg-[#F6F6F6]"
             }`}
           >
             <div className="flex items-start gap-4">

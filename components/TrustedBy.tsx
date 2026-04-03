@@ -17,7 +17,7 @@ export default function TrustedBy() {
         </p>
       </div>
 
-      <div className="bg-[#F6F6F6] py-6 w-80 sm:w-160 md:w-200 lg:w-250 xl:w-full mx-auto">
+      <div className="bg-[#F6F6F6] py-6 w-72 sm:w-160 md:w-200 lg:w-250 xl:w-full mx-auto">
         <Marquee
           gradient={false}
           speed={50}
