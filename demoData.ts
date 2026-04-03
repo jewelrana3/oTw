@@ -93,3 +93,56 @@ export const faqData = [
       "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
   },
 ];
+
+
+
+import one from "@/public/our-services/one.png";
+import two from "@/public/our-services/two.png";
+import three from "@/public/our-services/three.png";
+import four from "@/public/our-services/four.png";
+import five from "@/public/our-services/five.png";
+import six from "@/public/our-services/six.png";
+export const services = [
+  {
+    title: "Manage Property Listings",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: one, // Replace with your actual icon paths
+    border: false,
+  },
+  {
+    title: "Manage Customer Bookings",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: two,
+    border: true,
+  },
+  {
+    title: "Schedule House Cleaning",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: three,
+    border: true,
+  },
+  {
+    title: "Monitor Guest Reviews",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: six,
+    border: true,
+  },
+  {
+    title: "Track & Report Expenses",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: five,
+    border: true,
+  },
+  {
+    title: "Guest Inquiry & Support",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    icon: four,
+    border: true,
+  },
+];

@@ -1,57 +1,8 @@
-import React from "react";
-import Image from "next/image";
-import one from "@/public/our-services/one.png";
-import two from "@/public/our-services/two.png";
-import three from "@/public/our-services/three.png";
-import four from "@/public/our-services/four.png";
-import five from "@/public/our-services/five.png";
-import six from "@/public/our-services/six.png";
-import OurServiecesRead from "./modal/OurServiecesRead";
 
-const services = [
-  {
-    title: "Manage Property Listings",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: one, // Replace with your actual icon paths
-    border: false,
-  },
-  {
-    title: "Manage Customer Bookings",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: two,
-    border: true,
-  },
-  {
-    title: "Schedule House Cleaning",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: three,
-    border: true,
-  },
-  {
-    title: "Monitor Guest Reviews",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: six,
-    border: true,
-  },
-  {
-    title: "Track & Report Expenses",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: five,
-    border: true,
-  },
-  {
-    title: "Guest Inquiry & Support",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    icon: four,
-    border: true,
-  },
-];
+import Image from "next/image";
+import OurServiecesRead from "./modal/OurServiecesRead";
+import { services } from "@/demoData";
+
 
 export default function ServicesSection() {
   return (
@@ -70,9 +21,8 @@ export default function ServicesSection() {
       </div>
 
       {/* Cards Grid */}
-      {/* Changed: grid-cols-1 -> md:grid-cols-2 -> lg:grid-cols-3 */}
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-6 md:gap-8 px-5">
-        {services.map((service, index) => (
+        {services?.map((service, index) => (
           <div
             key={index}
             className={`flex flex-col items-start p-8 md:p-10 bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm hover:shadow-lg transition-all duration-300 ${
@@ -90,7 +40,7 @@ export default function ServicesSection() {
               />
             </div>
 
-            <h3 className="text-xl md:text-[26px] font-bold text-gray-800 mb-3 md:mb-4 leading-tight">
+            <h3 className="text-xl md:text-[23px] font-bold text-gray-800 mb-3 md:mb-4 leading-tight">
               {service.title}
             </h3>
 
@@ -100,9 +50,9 @@ export default function ServicesSection() {
 
             <OurServiecesRead
               trigger={
-                <button className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
+                <div className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
                   Read More
-                </button>
+                </div>
               }
             />
           </div>

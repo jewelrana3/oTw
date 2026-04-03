@@ -14,9 +14,9 @@ export default function OurServiecesRead({
   return (
     <Dialog>
       <DialogTrigger>{trigger}</DialogTrigger>
-      <DialogContent className="pt-10">
+      <DialogContent className="pt-5">
         <DialogTitle className="text-xl ml-3">Read More</DialogTitle>
-        <p className="p-5 text-[15px]">
+        <p className="px-5 text-[15px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

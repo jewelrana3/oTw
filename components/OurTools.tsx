@@ -1,5 +1,4 @@
-import React from "react";
-import one from "@/public/our-tools/one.png";
+
 import Image from "next/image";
 import { tools } from "@/demoData";
 
