@@ -42,9 +42,9 @@ export default function Pricing() {
           >
             Pay Yearly
           </span>
-          <div className="absolute mt-10 ml-110 flex items-center gap-2">
+          <div className="absolute mt-40 md:mt-10 md:ml-110 flex flex-col items-center gap-2 mb-5">
             <Image src={offer} alt="Offer" />
-            <div className="text-[#ed426e] text-xs font-semibold mt-10">
+            <div className="text-[#ed426e] text-xs font-semibold md:mt-10">
               Save 25%
             </div>
           </div>

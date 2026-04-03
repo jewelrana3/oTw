@@ -13,7 +13,7 @@ export default function page() {
   return (
     <>
       <HeroSection />
-      <TrustedBy />
+      {/* <TrustedBy /> */}
       <ServicesSection />
       <Pricing />
       <OurTools />

@@ -1,22 +1,25 @@
-import { UserPlus, Users, Headset } from "lucide-react";
+import one from "@/public/easy/one.png";
+import two from "@/public/easy/two.png";
+import three from "@/public/easy/three.png";
+import Image from "next/image";
 
 const steps = [
   {
     number: "01",
     text: "Add requirements & sign up today",
-    icon: <UserPlus size={48} className="text-[#331a1d]" />,
+    icon: one,
     plusColor: "text-[#ed426e]",
   },
   {
     number: "02",
     text: "Connect with your CSM &  onboarding team",
-    icon: <Users size={48} className="text-[#331a1d]" />,
+    icon: three,
     plusColor: "text-[#ed426e]",
   },
   {
     number: "03",
     text: "Meet your STR Assistant next week",
-    icon: <Headset size={48} className="text-[#331a1d]" />,
+    icon: two,
     plusColor: "text-[#ed426e]",
   },
 ];
@@ -48,14 +51,14 @@ export default function StartedEasy() {
               </div>
 
               {/* Icon Placeholder */}
-              <div className="relative scale-125">
-                {/* Lucide icons used here - you can replace with your custom SVGs */}
-                {step.icon}
-                <span
-                  className={`absolute -top-1 -right-3 font-bold text-2xl ${step.plusColor}`}
-                >
-                  +
-                </span>
+              <div className="">
+                <Image
+                  src={step.icon}
+                  alt={`Step ${index + 1}`}
+                  width={90}
+                  height={90}
+                  className="h-auto w-auto object-contain"
+                />
               </div>
             </div>
 
