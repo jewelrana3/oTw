@@ -1,16 +1,23 @@
-import React from 'react';
-import Link from 'next/link';
-
+"use client";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
+  const scrollToPricing = () => {
+    const element = document.getElementById("pricing");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen w-full flex flex-col items-center justify-center bg-white overflow-hidden py-20 px-4">
-      
       {/* 1. Grid Background Pattern */}
-      <div className="absolute inset-0 z-0 opacity-[0.4]" 
+      <div
+        className="absolute inset-0 z-0 opacity-[0.4]"
         style={{
           backgroundImage: `linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px)`,
-          backgroundSize: '100px 100px'
+          backgroundSize: "100px 100px",
         }}
       />
 
@@ -18,16 +25,24 @@ export default function HeroSection() {
       <div className="absolute inset-0 pointer-events-none">
         {/* Logos (Tilted) */}
         <div className="absolute top-[15%] left-[15%] rotate-[-15deg] bg-[#ff5a5f] p-4 rounded-3xl shadow-lg animate-float">
-          <div className="w-12 h-12 text-white font-bold flex items-center justify-center">airbnb</div>
+          <div className="w-12 h-12 text-white font-bold flex items-center justify-center">
+            airbnb
+          </div>
         </div>
-        <div className="absolute top-[15%] right-[15%] rotate-[20deg] bg-[#003580] p-4 rounded-3xl shadow-lg">
-          <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">B.</div>
+        <div className="absolute top-[15%] right-[15%] rotate-20 bg-[#003580] p-4 rounded-3xl shadow-lg">
+          <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">
+            B.
+          </div>
         </div>
         <div className="absolute bottom-[25%] left-[20%] rotate-[-10deg] bg-[#001d3d] p-4 rounded-3xl shadow-lg border-2 border-purple-400">
-          <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">V</div>
+          <div className="w-12 h-12 text-white font-bold flex items-center justify-center text-3xl">
+            V
+          </div>
         </div>
-        <div className="absolute bottom-[25%] right-[20%] rotate-[25deg] bg-[#34e0a1] p-4 rounded-3xl shadow-lg">
-          <div className="w-12 h-12 text-black font-bold flex items-center justify-center text-3xl">🦉</div>
+        <div className="absolute bottom-[25%] right-[20%] rotate-25 bg-[#34e0a1] p-4 rounded-3xl shadow-lg">
+          <div className="w-12 h-12 text-black font-bold flex items-center justify-center text-3xl">
+            🦉
+          </div>
         </div>
 
         {/* Scattered Dots */}
@@ -46,19 +61,33 @@ export default function HeroSection() {
           Airbnb Assistants For <br />
           <span className="text-gray-900">Property Management</span>
         </h1>
-        
+
         <p className="text-gray-500 text-lg md:text-xl leading-relaxed mb-10 max-w-3xl mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
 
         <div className="flex flex-col items-center gap-6">
-          <button className="bg-[#ed426e] hover:bg-[#d63a62] text-white font-semibold py-4 px-10 rounded-xl text-lg transition-all flex items-center gap-2">
-            Schedule A Meeting <span>→</span>
-          </button>
-          
-          <Link href="#pricing" className="text-gray-900 font-semibold underline decoration-2 underline-offset-4 hover:text-[#ed426e] transition-colors">
-            See Pricing
+          <Link
+            href="https://meet.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#ED3C6A] text-white px-6 py-2.5 rounded text-sm font-semibold hover:bg-[#c5221f] hover:shadow-lg transition-all no-underline flex items-center  gap-2"
+          >
+            Schedule A Meeting{" "}
+            <span>
+              <ArrowRight />
+            </span>
           </Link>
+
+          <div
+            onClick={scrollToPricing}
+            className="text-gray-900 font-semibold underline decoration-2 underline-offset-4 hover:text-[#ed426e] transition-colors cursor-pointer"
+          >
+            See Pricing
+          </div>
         </div>
       </div>
 
@@ -68,7 +97,6 @@ export default function HeroSection() {
           Trusted by leaders in 50+ industries
         </p>
       </div>
-
     </section>
   );
-};
+}

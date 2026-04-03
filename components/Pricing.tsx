@@ -7,9 +7,14 @@ import offer from "@/public/pricing/offer.png";
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
+  const pricingRef = React.useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="py-20 px-4 bg-white font-sans">
+    <section
+      className="py-20 px-4 bg-white font-sans"
+      ref={pricingRef}
+      id="pricing"
+    >
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -26,7 +31,7 @@ export default function Pricing() {
           </span>
           <button
             onClick={() => setIsYearly(!isYearly)}
-            className="w-12 h-6 bg-gray-300 rounded-full relative transition-colors duration-200 focus:outline-none"
+            className="w-12 h-6 bg-gray-300 rounded-full relative transition-colors duration-200 focus:outline-none cursor-pointer"
           >
             <div
               className={`absolute top-1 left-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 ${isYearly ? "translate-x-6" : ""}`}

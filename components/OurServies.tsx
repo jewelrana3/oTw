@@ -88,7 +88,7 @@ export default function ServicesSection() {
               {service.description}
             </p>
 
-            <button className="px-8 py-2 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-medium hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 text">
+            <button className="mt-auto px-8 py-2 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-medium hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
               Read More
             </button>
           </div>

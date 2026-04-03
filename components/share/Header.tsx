@@ -44,7 +44,9 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <Link
-          href="#"
+          href="https://meet.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#ED3C6A] text-white px-6 py-2.5 rounded text-sm font-semibold hover:bg-[#c5221f] hover:shadow-lg transition-all no-underline flex items-center  gap-2"
         >
           Schedule A Meeting{" "}

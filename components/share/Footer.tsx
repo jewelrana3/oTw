@@ -5,6 +5,7 @@ const helpLinks = ['Customer Support', 'Delivery Details', 'Terms & Conditions',
 const resourceLinks = ['Free eBooks', 'Development Tutorial', 'How to – Blog', 'Youtube Playlist'];
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-10 py-14 grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-10">
@@ -19,7 +20,7 @@ export default function Footer() {
             <span className="text-[#34A853]">l</span>
             <span className="text-[#EA4335]">e</span>
           </Link>
-          <p className="text-[#5f6368] text-sm leading-7 max-w-[280px] mb-7">
+          <p className="text-[#5f6368] text-sm leading-7 max-w-70 mb-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet
             accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper
             amet adipiscing fermentum.
@@ -63,7 +64,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="bg-[#1e1b3a] text-center py-4 px-10">
         <p className="text-[#9e9eb8] text-sm">
-          © Copyright 2024, All Rights Reserved by <span className="text-[#c5c5d8]">XYz</span>
+          © Copyright {currentYear}, All Rights Reserved by <span className="text-[#c5c5d8]">XYz</span>
         </p>
       </div>
     </footer>

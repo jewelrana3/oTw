@@ -24,6 +24,17 @@ const steps = [
 export default function StartedEasy() {
   return (
     <section className="py-20 px-4 bg-white">
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          Getting Started is <span className="text-[#ff4d8d]">Easy</span>
+        </h2>
+        <p className="text-black font-semibold ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore <br /> magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+          ut aliquip ex ea commodo <br /> consequat.
+        </p>
+      </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
         {steps.map((step, index) => (
           <div key={index} className="flex flex-col items-center">
@@ -49,7 +60,7 @@ export default function StartedEasy() {
             </div>
 
             {/* Description Text */}
-            <p className="text-center font-bold text-gray-900 text-lg max-w-[200px] leading-snug">
+            <p className="text-center font-bold text-gray-900 text-lg  leading-snug">
               {step.text}
             </p>
           </div>

@@ -7,12 +7,14 @@ import Pricing from "@/components/Pricing";
 import QuestionSection from "@/components/share/QuestionSection";
 import StartedEasy from "@/components/StartedEasy";
 import StillHaveQuestion from "@/components/StillHaveQuestion";
+import TrustedBy from "@/components/TrustedBy";
 import React from "react";
 
 export default function page() {
   return (
     <>
       <HeroSection />
+      <TrustedBy />
       <ServicesSection />
       <Pricing />
       <OurTools />
