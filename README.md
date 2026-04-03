@@ -1,15 +1,15 @@
-# One Little Web - Airbnb Assistant (Hiring Task)
+# One Little Web - (Hiring Task)
 
 A high-fidelity conversion of the provided Figma design into a fully functional, responsive web page built with **Next.js**.
 
 ## 🚀 Live Demo
-**[Insert Your Vercel/Netlify URL Here]**
+https://hiring-task-chi.vercel.app/
 
 ## 🛠️ Tech Stack
-- **Framework:** [Next.js 14/15](https://nextjs.org/) (App Router)
+- **Framework:** Next.js Latest (https://nextjs.org/) (App Router)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Components:** [Framer Motion / React Fast Marquee] (mention what you used for the logos)
+- **Components:** [Shadcn / React Fast Marquee] (mention what you used for the logos)
 - **Typography:** DM Sans (Google Fonts via `next/font`)
 
 ## ✨ Key Features
@@ -26,4 +26,4 @@ A high-fidelity conversion of the provided Figma design into a fully functional,
 │   └── page.tsx        # Hero, Logo Marquee, and FAQ sections
 ├── components/         # Reusable UI components (Navbar, Footer, Hero)
 ├── public/             # Optimized assets and hero images
-└── tailwind.config.ts  # Custom theme extensions for DM Sans
+
