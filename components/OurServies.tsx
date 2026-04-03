@@ -54,34 +54,37 @@ const services = [
 
 export default function ServicesSection() {
   return (
-   <section className="py-12 md:py-20 px-4 max-w-7xl mx-auto bg-white">
+    <section className="py-12 md:py-20 px-4 bg-white">
       {/* Header Section */}
-      <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
+      <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
           Our <span className="text-[#ff4d8d]">Service</span>
         </h2>
-        <p className="text-gray-700 font-medium text-sm md:text-base leading-relaxed">
+        <p className="text font-medium text-sm md:text-base leading-relaxed px-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi.
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
       </div>
 
       {/* Cards Grid */}
       {/* Changed: grid-cols-1 -> md:grid-cols-2 -> lg:grid-cols-3 */}
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-6 md:gap-8">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-6 md:gap-8 px-5">
         {services.map((service, index) => (
           <div
             key={index}
             className={`flex flex-col items-start p-8 md:p-10 bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-sm hover:shadow-lg transition-all duration-300 ${
-              service.border ? "border border-[#ff4d8d]" : "border border-transparent"
+              service.border
+                ? "border border-[#ff4d8d]"
+                : "border border-transparent"
             }`}
           >
             {/* Icon Wrapper */}
             <div className="w-16 h-16 md:w-20 md:h-20 mb-6 md:mb-8 flex items-center justify-center">
-              <Image 
-                src={service.icon} 
-                alt={service.title} 
+              <Image
+                src={service.icon}
+                alt={service.title}
                 className="object-contain"
               />
             </div>
@@ -90,7 +93,7 @@ export default function ServicesSection() {
               {service.title}
             </h3>
 
-            <p className="text-gray-600 font-medium text-sm md:text-base mb-6 md:mb-8 leading-relaxed">
+            <p className=" font-medium text-sm md:text-base mb-6 md:mb-8 leading-relaxed ">
               {service.description}
             </p>
 

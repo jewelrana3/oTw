@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
               ))}
             </ul>
 
-            <button className="bg-[#ed426e] hover:bg-[#d63a62] text-white font-semibold py-4 px-8 rounded-xl flex items-center gap-2 transition-all">
+            <button className="bg-[#ed426e] hover:bg-[#d63a62] text-white font-semibold py-4 px-8 rounded-md flex items-center gap-2 transition-all">
               Schedule A Meeting <span>→</span>
             </button>
           </div>

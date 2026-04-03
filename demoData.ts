@@ -60,3 +60,36 @@ export const tools = [
   { image: "/our-tools/four.png" },
   { image: "/our-tools/one.png" },
 ];
+
+export const faqData = [
+  {
+    question: "Is there a free trial available?",
+    answer:
+      "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+  },
+  {
+    question: "Can I change my plan later?",
+    answer:
+      "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
+  },
+  {
+    question: "What is your cancellation policy?",
+    answer:
+      "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
+  },
+  {
+    question: "Can other info be added to an invoice?",
+    answer:
+      "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
+  },
+  {
+    question: "How does billing work?",
+    answer:
+      "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
+  },
+  {
+    question: "How do I change my account email?",
+    answer:
+      "personalized 30-minute onboarding call to get you up and running as soon as", // Add answer here if available
+  },
+];

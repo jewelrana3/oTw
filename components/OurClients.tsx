@@ -28,14 +28,14 @@ const testimonials = [
 export default function TestimonialSection() {
   return (
     <>
-      <div className="bg-[#F6F6F6] py-16 px-4 text-center">
+      <div className="bg-white py-16 text-center">
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-bold text-black">
           Check Our Clients <span className="text-pink-500">Review</span>
         </h2>
 
         {/* Description */}
-        <p className=" mx-auto mt-4 text-sm md:text-base text-black font-semibold leading-relaxed">
+        <p className="mt-4 text-sm md:text-base text-black font-semibold leading-relaxed max-w-3xl mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -43,7 +43,7 @@ export default function TestimonialSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-gray-100 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
         {testimonials.map((item, i) => (
           <div
             key={i}

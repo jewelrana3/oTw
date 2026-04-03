@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const companyLinks = ["About", "Features", "Works", "Career"];
@@ -27,14 +28,17 @@ export default function Footer() {
             href="/"
             className="text-[28px] font-bold tracking-tight no-underline block mb-5"
           >
-            <span className="text-[#4285F4]">G</span>
-            <span className="text-[#EA4335]">o</span>
-            <span className="text-[#FBBC05]">o</span>
-            <span className="text-[#4285F4]">g</span>
-            <span className="text-[#34A853]">l</span>
-            <span className="text-[#EA4335]">e</span>
+           
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={100}
+              height={40}
+              className="h-8 md:h-10 w-auto"
+            />
+       
           </Link>
-          <p className="text-[#5f6368] text-sm leading-7 max-w-full  mb-7">
+          <p className="text-[#5f6368] text-sm leading-7  mb-7">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             dictum aliquet accumsan porta lectus ridiculus in mattis. Netus
             sodales in volutpat ullamcorper amet adipiscing fermentum.

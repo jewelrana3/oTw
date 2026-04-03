@@ -5,8 +5,8 @@ import three from "@/public/still/three.png";
 
 const SupportCard = () => {
   return (
-    <div className="flex items-center justify-center p-8 bg-[#F9FAFB]">
-      <div className="w-full px-8 py-12 text-center rounded-3xl shadow">
+    <div className="flex items-center justify-center p-8 bg-[#f0f4f8] rounded-2xl max-w-4xl mx-auto  mb-16">
+      <div className="w-full px-8 py-12 text-center">
         {/* Avatar Stack */}
         <div className="flex justify-center -space-x-3 mb-8">
           <Image

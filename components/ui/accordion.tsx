@@ -55,7 +55,7 @@ function AccordionTrigger({
           {/* PLUS: Shown by default, hidden when expanded */}
           <Plus
             strokeWidth={2.5}
-            className="absolute size-7 block group-aria-expanded/accordion-trigger:hidden border border-[#f0306a] rounded-full p-1"
+            className="absolute size-7 block group-aria-expanded/accordion-trigger:hidden border border-[#f0306a] rounded-full p-1 cursor-pointer"
           />
         </div>
       </AccordionPrimitive.Trigger>
