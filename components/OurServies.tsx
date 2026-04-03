@@ -90,7 +90,7 @@ export default function ServicesSection() {
               />
             </div>
 
-            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 leading-tight">
+            <h3 className="text-xl md:text-[26px] font-bold text-gray-800 mb-3 md:mb-4 leading-tight">
               {service.title}
             </h3>
 
@@ -100,9 +100,9 @@ export default function ServicesSection() {
 
             <OurServiecesRead
               trigger={
-                <div className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
+                <button className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
                   Read More
-                </div>
+                </button>
               }
             />
           </div>
