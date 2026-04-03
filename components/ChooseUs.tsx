@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Right Visuals */}
-          <div className="relative h-125 flex items-center justify-center">
+          <div className="relative h-125 flex items-center justify-center ">
             {/* Main Pink Background Circle */}
             <div className="absolute w-100 h-60 bg-[#ffcbd9] rounded-br-[100px] rounded-bl-[100px] rounded-tr-[100px] rounded-tl-[100px] opacity-60 translate-x-10" />
 
@@ -67,7 +67,7 @@ export default function WhyChooseUs() {
             />
 
             {/* Floating Card: Property Info (Top Left) */}
-            <div className="absolute top-10 -left-20 z-20 bg-white p-3 rounded-2xl shadow-xl flex gap-4 w-64 animate-bounce-slow">
+            <div className="hidden absolute top-10 -left-20 z-20 bg-white p-3 rounded-2xl shadow-xl sm:flex gap-4 w-64 animate-bounce-slow">
               <div className="w-30 h-20 bg-gray-200  rounded-2xl">
                 <Image
                   src={room}
@@ -108,7 +108,7 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Floating Card: Logos (Top Right) */}
-            <div className="absolute top-10 right-0 z-20 bg-white p-4 rounded-2xl shadow-xl grid grid-cols-2 gap-2">
+            <div className="absolute  hidden top-10 right-0 z-20 bg-white p-4 rounded-2xl shadow-xl sm:grid grid-cols-2 gap-2">
               <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center p-1">
                 <Image src={air} alt="Three" />
               </div>

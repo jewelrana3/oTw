@@ -6,6 +6,7 @@ import three from "@/public/our-services/three.png";
 import four from "@/public/our-services/four.png";
 import five from "@/public/our-services/five.png";
 import six from "@/public/our-services/six.png";
+import OurServiecesRead from "./modal/OurServiecesRead";
 
 const services = [
   {
@@ -97,9 +98,13 @@ export default function ServicesSection() {
               {service.description}
             </p>
 
-            <button className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
-              Read More
-            </button>
+            <OurServiecesRead
+              trigger={
+                <div className="mt-auto w-full sm:w-auto px-8 py-2.5 border border-[#ff4d8d] text-[#ff4d8d] rounded-full font-semibold hover:bg-[#ff4d8d] hover:text-white transition-all duration-200 cursor-pointer">
+                  Read More
+                </div>
+              }
+            />
           </div>
         ))}
       </div>

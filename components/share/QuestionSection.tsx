@@ -1,4 +1,4 @@
-import { PlusCircle, MinusCircle } from "lucide-react";
+
 import {
   Accordion,
   AccordionContent,
@@ -25,6 +25,7 @@ export default function QuestionSection() {
         <Accordion>
           {faqData?.map((item, index) => (
             <AccordionItem
+              key={index}
               value={`item-${index + 1}`}
               className="border-b border-pink-200 last:border-0 "
             >
